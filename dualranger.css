@@ -1,0 +1,74 @@
+.row{
+  width:50%;
+  min-width: 300px;
+  padding-top: 15px;
+  margin-top: 5px;
+}
+input{
+  border:0px;
+  border-radius: 5px;
+  box-shadow: 0px;
+  outline: 0px;
+  opacity: 0.8;
+  padding-left: 5px;
+  height: 30px;
+  margin-top: 1px;
+  margin-bottom: 1px;
+  z-index: 50;
+}
+  input[type=range]{
+    -webkit-appearance: none;
+    width: 88%;
+    padding-right: 4px;
+  }
+
+  input[type=range].hid::-webkit-slider-runnable-track{
+    display:none;
+  }
+
+  input[type=range].vis::-webkit-slider-runnable-track{
+    -webkit-appearance: none;
+    box-shadow: 0px;
+    border: 0px;
+    background-color: grey;
+    height: 5px;
+    padding-right: 3px;
+  }
+  input[type=range].vis::-webkit-slider-runnable-track:active{
+    box-shadow: 1px 1px 1px darkgrey;
+  }
+  input[type=range].vis::-webkit-slider-thumb{
+    -webkit-appearance: none;
+    position: relative;
+    top: -7px;
+    width: 10px;
+    height: 20px;
+    border-radius: 3px;
+    background: #68b04d;
+    opacity: 0.8;
+    border: 1px #265a34 solid;
+    box-shadow: 1px 1px 1px grey;
+    cursor: pointer;
+  }
+  input[type=range].vis::-webkit-slider-thumb:active{
+    background: #68b04d;
+    box-shadow: 1px 1px 1px darkgrey;
+  }
+  input[type=range].vis::-webkit-slider-thumb:hover{
+    box-shadow: 1px 1px 1px darkgrey;
+  }
+
+  #thumb{
+    width: 10px;
+    height: 16px;
+    box-shadow: 1px 1px 2px darkgrey;
+    background: #265a34;
+    border-radius: 3px;
+    z-index: 101;
+    border: 0px #265a34 solid;
+    cursor: pointer;
+    padding-top: 4px;
+  }
+  .valTag{
+    position: absolute;
+  }
